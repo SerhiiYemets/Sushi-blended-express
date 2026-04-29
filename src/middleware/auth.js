@@ -1,10 +1,6 @@
 import createHttpError from 'http-errors';
 import { Session } from '../models/session.js';
-import { User } from '../models/user.js';
-import { createHash } from 'crypto';
-
-const hashToken = (token) =>
-  createHash('sha256').update(token).digest('hex');
+import { hashToken } from '../utils/hashToken.js';
 
 export const authenticate = async (req, res, next) => {
   try {
@@ -26,13 +22,7 @@ export const authenticate = async (req, res, next) => {
       throw createHttpError(401, 'Access token expired');
     }
 
-    const user = await User.findById(session.userId);
-
-    if (!user) {
-      throw createHttpError(401, 'User not found');
-    }
-
-    req.user = user;
+    req.user = { _id: session.userId };
 
     next();
   } catch (error) {

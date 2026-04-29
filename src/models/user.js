@@ -10,6 +10,7 @@ const userSchema = new Schema(
       minlength: 2,
       maxlength: 32,
     },
+
     email: {
       type: String,
       required: true,
@@ -18,11 +19,19 @@ const userSchema = new Schema(
       trim: true,
       match: /^\S+@\S+\.\S+$/,
     },
+
     password: {
       type: String,
       required: true,
       minlength: 8,
     },
+
+    role: {
+      type: String,
+      enum: ['user', 'admin'],
+      default: 'user',
+    },
+
     avatarUrl: {
       type: String,
       default: function () {
@@ -45,7 +54,6 @@ const userSchema = new Schema(
 userSchema.pre('save', async function () {
   if (!this.isModified('password')) return;
 
-  const bcrypt = await import('bcrypt');
   this.password = await bcrypt.hash(this.password, 10);
 });
 

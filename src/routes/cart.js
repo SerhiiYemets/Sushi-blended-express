@@ -8,13 +8,19 @@ import {
 
 import { authenticate } from '../middleware/auth.js';
 
+import { celebrate } from 'celebrate';
+import {
+  addToCartSchema,
+  productIdParamSchema,
+} from '../validations/cartValidation.js';
+
 const router = express.Router();
 
 router.use(authenticate);
 
 router.get('/', getCart);
-router.post('/', addToCart);
-router.delete('/:productId', removeFromCart);
+router.post('/', celebrate(addToCartSchema), addToCart);
+router.delete('/:productId', celebrate(productIdParamSchema), removeFromCart);
 router.delete('/', clearCart);
 
 export default router;
