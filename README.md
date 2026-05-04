@@ -60,7 +60,7 @@ SMTP_USER=tvůj_smtp_user
 SMTP_PASSWORD=tvůj_smtp_password
 SMTP_FROM=tvůj_email
 
-FRONTEND_DOMAIN=http://localhost:5173
+FRONTEND_DOMAIN=https://sushi-blended-express-frontend.vercel.app
 NODE_ENV=development
 ```
 
@@ -196,7 +196,7 @@ SMTP_USER=your_smtp_user
 SMTP_PASSWORD=your_smtp_password
 SMTP_FROM=your_email
 
-FRONTEND_DOMAIN=http://localhost:5173
+FRONTEND_DOMAIN=https://sushi-blended-express-frontend.vercel.app
 NODE_ENV=development
 ```
 
