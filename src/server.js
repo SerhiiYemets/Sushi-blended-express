@@ -22,17 +22,20 @@ app.use(logger);
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_DOMAIN,
+    origin: (origin, callback) => {
+      if (!origin) return callback(null, true);
+
+      const allowedOrigin = process.env.FRONTEND_DOMAIN;
+
+      if (origin === allowedOrigin) {
+        return callback(null, true);
+      }
+
+      return callback(null, false);
+    },
     credentials: true,
-    methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
   }),
 );
-
-app.options('*', cors({
-  origin: process.env.FRONTEND_DOMAIN,
-  credentials: true,
-}));
 
 app.use(express.json());
 app.use(cookieParser());
@@ -46,6 +49,7 @@ app.use('/api/auth', authRouter);
 app.use(errors());
 
 app.use(notFoundHandler);
+
 app.use(errorHandler);
 
 await connectMongoDB();

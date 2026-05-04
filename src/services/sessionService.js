@@ -3,8 +3,6 @@ import { Session } from '../models/session.js';
 import { FIFTEEN_MINUTES, THIRTY_DAYS } from '../constants/time.js';
 import { hashToken } from '../utils/hashToken.js';
 
-const isProduction = process.env.NODE_ENV === 'production';
-
 export const createSession = async (userId) => {
   const accessToken = crypto.randomBytes(32).toString('hex');
   const refreshToken = crypto.randomBytes(32).toString('hex');
@@ -71,31 +69,35 @@ export const deleteSession = async (accessToken, refreshToken) => {
 };
 
 export const setSessionCookies = (res, accessToken, refreshToken) => {
-  const cookieOptions = {
+  const isProd = process.env.NODE_ENV === 'production';
+
+  const baseOptions = {
     httpOnly: true,
-    secure: isProduction,
-    sameSite: isProduction ? 'none' : 'lax',
+    secure: isProd,
+    sameSite: 'none',
   };
 
   res.cookie('accessToken', accessToken, {
-    ...cookieOptions,
+    ...baseOptions,
     maxAge: FIFTEEN_MINUTES,
   });
 
   res.cookie('refreshToken', refreshToken, {
-    ...cookieOptions,
+    ...baseOptions,
     maxAge: THIRTY_DAYS,
   });
 };
 
 export const clearSessionCookies = (res) => {
-  const cookieOptions = {
+  const isProd = process.env.NODE_ENV === 'production';
+
+  const baseOptions = {
     httpOnly: true,
-    secure: isProduction,
-    sameSite: isProduction ? 'none' : 'lax',
+    secure: isProd,
+    sameSite: 'none',
   };
 
-  res.clearCookie('accessToken', cookieOptions);
-  res.clearCookie('refreshToken', cookieOptions);
+  res.clearCookie('accessToken', baseOptions);
+  res.clearCookie('refreshToken', baseOptions);
 };
 
