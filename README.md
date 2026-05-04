@@ -5,19 +5,19 @@
 ### 📌 Popis
 
 Backend API pro sushi aplikaci vytvořený pomocí **Node.js**, **Express** a **MongoDB**.
-Podporuje autentizaci, produkty, kategorie a nákupní košík.
+Podporuje autentizaci, produkty, kategorie, nákupní košík a reset hesla přes email.
 
 ---
 
 ### 🚀 Funkce
 
 * 🔐 Autentizace (Access + Refresh tokeny v cookies)
+* 🔑 Reset hesla přes email (JWT + SMTP)
 * 🛒 Nákupní košík
 * 🍱 Produkty a kategorie
 * 📂 Menu (aggregation)
 * ⚡ REST API
 * 🛡 Validace pomocí Joi
-* 🧠 Session-based autentizace (bez JWT)
 
 ---
 
@@ -28,6 +28,9 @@ Podporuje autentizaci, produkty, kategorie a nákupní košík.
 * MongoDB + Mongoose
 * Pino (logger)
 * Celebrate / Joi (validace)
+* JSON Web Token (JWT)
+* Nodemailer (email service)
+* Handlebars (email templates)
 
 ---
 
@@ -46,9 +49,19 @@ npm install
 Vytvoř `.env` soubor:
 
 ```env
+PORT=3000
 MONGO_URL=tvůj_mongodb_connection_string
-NODE_ENV=development
+
+JWT_SECRET=tvůj_secret
+
+SMTP_HOST=smtp-relay.brevo.com
+SMTP_PORT=587
+SMTP_USER=tvůj_smtp_user
+SMTP_PASSWORD=tvůj_smtp_password
+SMTP_FROM=tvůj_email
+
 FRONTEND_DOMAIN=http://localhost:5173
+NODE_ENV=development
 ```
 
 ---
@@ -77,7 +90,10 @@ POST /api/auth/register
 POST /api/auth/login
 POST /api/auth/refresh
 POST /api/auth/logout
+POST /api/auth/request-reset-email
 ```
+
+---
 
 #### Produkty
 
@@ -89,12 +105,16 @@ PATCH /api/products/:id (admin)
 DELETE /api/products/:id (admin)
 ```
 
+---
+
 #### Kategorie
 
 ```
 GET /api/categories
 POST /api/categories (admin)
 ```
+
+---
 
 #### Košík
 
@@ -109,9 +129,10 @@ DELETE /api/cart
 
 ### ⚠️ Poznámky
 
-* Používá cookies pro autentizaci
+* Používá cookies pro autentizaci (httpOnly)
 * Frontend musí mít `credentials: true`
 * V produkci je nutné HTTPS
+* Reset hesla funguje přes email s expiračním JWT tokenem
 
 ---
 
@@ -120,19 +141,19 @@ DELETE /api/cart
 ### 📌 Description
 
 Backend API for a sushi delivery application built with **Node.js**, **Express**, and **MongoDB**.
-Supports authentication, product catalog, categories, and cart functionality.
+Includes authentication, product catalog, categories, shopping cart, and password reset via email.
 
 ---
 
 ### 🚀 Features
 
-* 🔐 Authentication (Access + Refresh Tokens via cookies)
+* 🔐 Authentication (Access + Refresh tokens via cookies)
+* 🔑 Password reset via email (JWT + SMTP)
 * 🛒 Shopping cart
 * 🍱 Products & categories
 * 📂 Menu aggregation
 * ⚡ REST API
 * 🛡 Validation with Joi
-* 🧠 Session-based auth (no JWT)
 
 ---
 
@@ -143,6 +164,9 @@ Supports authentication, product catalog, categories, and cart functionality.
 * MongoDB + Mongoose
 * Pino (logger)
 * Celebrate / Joi (validation)
+* JSON Web Token (JWT)
+* Nodemailer (email service)
+* Handlebars (email templates)
 
 ---
 
@@ -161,9 +185,19 @@ npm install
 Create a `.env` file:
 
 ```env
+PORT=3000
 MONGO_URL=your_mongodb_connection_string
-NODE_ENV=development
+
+JWT_SECRET=your_secret
+
+SMTP_HOST=smtp-relay.brevo.com
+SMTP_PORT=587
+SMTP_USER=your_smtp_user
+SMTP_PASSWORD=your_smtp_password
+SMTP_FROM=your_email
+
 FRONTEND_DOMAIN=http://localhost:5173
+NODE_ENV=development
 ```
 
 ---
@@ -192,40 +226,16 @@ POST /api/auth/register
 POST /api/auth/login
 POST /api/auth/refresh
 POST /api/auth/logout
-```
-
-#### Products
-
-```
-GET /api/products
-GET /api/products/:id
-POST /api/products (admin)
-PATCH /api/products/:id (admin)
-DELETE /api/products/:id (admin)
-```
-
-#### Categories
-
-```
-GET /api/categories
-POST /api/categories (admin)
-```
-
-#### Cart
-
-```
-GET /api/cart
-POST /api/cart
-DELETE /api/cart/:productId
-DELETE /api/cart
+POST /api/auth/request-reset-email
 ```
 
 ---
 
 ### ⚠️ Notes
 
-* Uses cookies for authentication (httpOnly)
-* Requires credentials: true on frontend
-* Production requires HTTPS for cookies
+* Uses httpOnly cookies for authentication
+* Requires `credentials: true` on frontend
+* HTTPS is required in production
+* Password reset uses JWT with expiration
 
 ---
