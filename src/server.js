@@ -22,17 +22,7 @@ app.use(logger);
 
 app.use(
   cors({
-    origin: (origin, callback) => {
-      if (!origin) return callback(null, true);
-
-      const allowedOrigin = process.env.FRONTEND_DOMAIN;
-
-      if (origin === allowedOrigin) {
-        return callback(null, true);
-      }
-
-      return callback(null, false);
-    },
+    origin: true,
     credentials: true,
   }),
 );
