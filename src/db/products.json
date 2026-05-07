@@ -36,7 +36,7 @@
     "description": "Tuňák, spicy omáčka, okurka, sezam",
     "price": 309,
     "weight": "270g",
-    "image": "https://images.unsplash.com/photo-1562158070-622a3bd6a7f4",
+    "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252",
     "categoryId": 3
   },
   {
@@ -44,7 +44,7 @@
     "description": "Krevety tempura, avokádo, spicy mayo",
     "price": 329,
     "weight": "300g",
-    "image": "https://images.unsplash.com/photo-1604908176997-431df9d7b7b9",
+    "image": "https://images.unsplash.com/photo-1553621042-f6e147245754",
     "categoryId": 3
   },
   {
@@ -68,7 +68,7 @@
     "description": "Rýže, čerstvý losos",
     "price": 129,
     "weight": "120g",
-    "image": "https://images.unsplash.com/photo-1582450871972-ab5ca7a047b8",
+    "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c",
     "categoryId": 1
   },
   {
@@ -80,19 +80,11 @@
     "categoryId": 1
   },
   {
-    "name": "Nigiri Kreveta",
-    "description": "Rýže, kreveta, wasabi",
-    "price": 139,
-    "weight": "120g",
-    "image": "https://images.unsplash.com/photo-1607301405390-d831c242f59b",
-    "categoryId": 1
-  },
-  {
     "name": "Nigiri Úhoř",
     "description": "Rýže, úhoř, unagi omáčka",
     "price": 159,
     "weight": "130g",
-    "image": "https://images.unsplash.com/photo-1582450871972-ab5ca7a047b8",
+    "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c",
     "categoryId": 1
   },
   {
