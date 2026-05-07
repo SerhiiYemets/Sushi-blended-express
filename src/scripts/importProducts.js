@@ -7,12 +7,12 @@ import { Category } from '../models/category.js';
 
 await connectMongoDB();
 
-const productsRaw = await fs.readFile('products.json', 'utf-8');
+const productsRaw = await fs.readFile('src/db/products.json', 'utf-8');
 const products = JSON.parse(productsRaw);
 
 await Product.deleteMany({});
 
-const categoriesJsonRaw = await fs.readFile('categories.json', 'utf-8');
+const categoriesJsonRaw = await fs.readFile('src/db/categories.json', 'utf-8');
 const categoriesJson = JSON.parse(categoriesJsonRaw);
 
 const categories = await Category.find();

@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Philadelphia Classic",
+    "description": "Losos, krémový sýr, okurka, rýže, nori",
+    "price": 299,
+    "weight": "280g",
+    "image": "https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56",
+    "categoryId": 3
+  },
+  {
+    "name": "California Roll",
+    "description": "Krabí maso, avokádo, okurka, sezam",
+    "price": 279,
+    "weight": "250g",
+    "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c",
+    "categoryId": 3
+  },
+  {
+    "name": "Dragon Roll",
+    "description": "Úhoř, avokádo, okurka, unagi omáčka",
+    "price": 349,
+    "weight": "300g",
+    "image": "https://images.unsplash.com/photo-1553621042-f6e147245754",
+    "categoryId": 3
+  },
+  {
+    "name": "Tempura Roll",
+    "description": "Smažené krevety, sýr, omáčka spicy",
+    "price": 319,
+    "weight": "290g",
+    "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252",
+    "categoryId": 3
+  },
+  {
+    "name": "Nigiri Losos",
+    "description": "Rýže, čerstvý losos",
+    "price": 129,
+    "weight": "120g",
+    "image": "https://images.unsplash.com/photo-1582450871972-ab5ca7a047b8",
+    "categoryId": 1
+  },
+  {
+    "name": "Nigiri Tuňák",
+    "description": "Rýže, čerstvý tuňák",
+    "price": 139,
+    "weight": "120g",
+    "image": "https://images.unsplash.com/photo-1607301405390-d831c242f59b",
+    "categoryId": 1
+  },
+  {
+    "name": "Sake Maki",
+    "description": "Losos, rýže, nori",
+    "price": 169,
+    "weight": "150g",
+    "image": "https://images.unsplash.com/photo-1563612116625-3012372fccce",
+    "categoryId": 1
+  },
+  {
+    "name": "Avocado Maki",
+    "description": "Avokádo, rýže, nori",
+    "price": 149,
+    "weight": "140g",
+    "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de",
+    "categoryId": 1
+  },
+  {
+    "name": "Mega Sushi Set",
+    "description": "32 ks mix sushi a rolek",
+    "price": 899,
+    "weight": "1200g",
+    "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252",
+    "categoryId": 2
+  },
+  {
+    "name": "Family Set",
+    "description": "40 ks sushi pro celou rodinu",
+    "price": 1199,
+    "weight": "1500g",
+    "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c",
+    "categoryId": 2
+  },
+  {
+    "name": "VIP Set",
+    "description": "Prémiový set s lososem a tuňákem",
+    "price": 1499,
+    "weight": "1800g",
+    "image": "https://images.unsplash.com/photo-1553621042-f6e147245754",
+    "categoryId": 2
+  },
+  {
+    "name": "Margherita",
+    "description": "Rajčata, mozzarella, bazalka",
+    "price": 229,
+    "weight": "500g",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591",
+    "categoryId": 4
+  },
+  {
+    "name": "Pepperoni",
+    "description": "Pepperoni, mozzarella, rajčatová omáčka",
+    "price": 259,
+    "weight": "550g",
+    "image": "https://images.unsplash.com/photo-1548365328-9f547fb0953b",
+    "categoryId": 4
+  },
+  {
+    "name": "Hawaii",
+    "description": "Šunka, ananas, mozzarella",
+    "price": 249,
+    "weight": "530g",
+    "image": "https://images.unsplash.com/photo-1594007654729-407eedc4be65",
+    "categoryId": 4
+  },
+  {
+    "name": "Coca Cola",
+    "description": "0.5l",
+    "price": 49,
+    "weight": "500ml",
+    "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97",
+    "categoryId": 5
+  },
+  {
+    "name": "Sprite",
+    "description": "0.5l",
+    "price": 49,
+    "weight": "500ml",
+    "image": "https://images.unsplash.com/photo-1624517452488-04869289c4ca",
+    "categoryId": 5
+  },
+  {
+    "name": "Fanta",
+    "description": "0.5l",
+    "price": 49,
+    "weight": "500ml",
+    "image": "https://images.unsplash.com/photo-1581636625402-29b2a704ef13",
+    "categoryId": 5
+  },
+  {
+    "name": "Cheesecake",
+    "description": "Domácí cheesecake s ovocem",
+    "price": 129,
+    "weight": "180g",
+    "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b",
+    "categoryId": 6
+  },
+  {
+    "name": "Čokoládový dort",
+    "description": "Čokoládový dort s krémem",
+    "price": 139,
+    "weight": "200g",
+    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
+    "categoryId": 6
+  },
+  {
+    "name": "Kuřecí Wok",
+    "description": "Kuřecí maso, nudle, zelenina, teriyaki",
+    "price": 299,
+    "weight": "450g",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+    "categoryId": 7
+  }
+]

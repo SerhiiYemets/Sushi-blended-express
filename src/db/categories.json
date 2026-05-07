@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Sushi",
+    "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c"
+  },
+  {
+    "id": 2,
+    "name": "Sety",
+    "image": "https://images.unsplash.com/photo-1553621042-f6e147245754"
+  },
+  {
+    "id": 3,
+    "name": "Rolky",
+    "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252"
+  },
+  {
+    "id": 4,
+    "name": "Pizza",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591"
+  },
+  {
+    "id": 5,
+    "name": "Nápoje",
+    "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97"
+  },
+  {
+    "id": 6,
+    "name": "Dezerty",
+    "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b"
+  },
+  {
+    "id": 7,
+    "name": "Wok",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19"
+  }
+]

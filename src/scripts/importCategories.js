@@ -6,7 +6,7 @@ import { Category } from '../models/category.js';
 
 await connectMongoDB();
 
-const categoriesRaw = await fs.readFile('categories.json', 'utf-8');
+const categoriesRaw = await fs.readFile('src/db/categories.json', 'utf-8');
 const categories = JSON.parse(categoriesRaw);
 
 await Category.deleteMany({});
