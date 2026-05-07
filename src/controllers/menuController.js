@@ -10,11 +10,13 @@ export const getMenu = async (req, res) => {
         as: 'products',
       },
     },
+
     {
       $match: {
         products: { $ne: [] },
       },
     },
+
     {
       $project: {
         _id: 0,
@@ -24,8 +26,10 @@ export const getMenu = async (req, res) => {
             input: '$products',
             as: 'p',
             in: {
-              id: '$$p._id',
+              _id: '$$p._id',
+              categoryId: '$$p.categoryId',
               name: '$$p.name',
+              description: '$$p.description',
               price: '$$p.price',
               weight: '$$p.weight',
               image: '$$p.image',
