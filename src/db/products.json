@@ -32,6 +32,38 @@
     "categoryId": 3
   },
   {
+    "name": "Spicy Tuna Roll",
+    "description": "Tuňák, spicy omáčka, okurka, sezam",
+    "price": 309,
+    "weight": "270g",
+    "image": "https://images.unsplash.com/photo-1562158070-622a3bd6a7f4",
+    "categoryId": 3
+  },
+  {
+    "name": "Ebi Tempura Roll",
+    "description": "Krevety tempura, avokádo, spicy mayo",
+    "price": 329,
+    "weight": "300g",
+    "image": "https://images.unsplash.com/photo-1604908176997-431df9d7b7b9",
+    "categoryId": 3
+  },
+  {
+    "name": "Vegetarian Roll",
+    "description": "Avokádo, okurka, paprika, sezam",
+    "price": 249,
+    "weight": "240g",
+    "image": "https://images.unsplash.com/photo-1541696432-82c6da8ce7bf",
+    "categoryId": 3
+  },
+  {
+    "name": "Rainbow Roll",
+    "description": "Losos, tuňák, avokádo, okurka",
+    "price": 359,
+    "weight": "320g",
+    "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351",
+    "categoryId": 3
+  },
+  {
     "name": "Nigiri Losos",
     "description": "Rýže, čerstvý losos",
     "price": 129,
@@ -48,6 +80,22 @@
     "categoryId": 1
   },
   {
+    "name": "Nigiri Kreveta",
+    "description": "Rýže, kreveta, wasabi",
+    "price": 139,
+    "weight": "120g",
+    "image": "https://images.unsplash.com/photo-1607301405390-d831c242f59b",
+    "categoryId": 1
+  },
+  {
+    "name": "Nigiri Úhoř",
+    "description": "Rýže, úhoř, unagi omáčka",
+    "price": 159,
+    "weight": "130g",
+    "image": "https://images.unsplash.com/photo-1582450871972-ab5ca7a047b8",
+    "categoryId": 1
+  },
+  {
     "name": "Sake Maki",
     "description": "Losos, rýže, nori",
     "price": 169,
@@ -60,6 +108,22 @@
     "description": "Avokádo, rýže, nori",
     "price": 149,
     "weight": "140g",
+    "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de",
+    "categoryId": 1
+  },
+  {
+    "name": "Tekka Maki",
+    "description": "Tuňák, rýže, nori",
+    "price": 179,
+    "weight": "150g",
+    "image": "https://images.unsplash.com/photo-1563612116625-3012372fccce",
+    "categoryId": 1
+  },
+  {
+    "name": "Futomaki",
+    "description": "Losos, avokádo, okurka, vejce",
+    "price": 219,
+    "weight": "230g",
     "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de",
     "categoryId": 1
   },
@@ -88,75 +152,253 @@
     "categoryId": 2
   },
   {
-    "name": "Margherita",
-    "description": "Rajčata, mozzarella, bazalka",
-    "price": 229,
-    "weight": "500g",
-    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591",
-    "categoryId": 4
+    "name": "Sushi Deluxe Set",
+    "description": "24 ks sushi a nigiri mix",
+    "price": 999,
+    "weight": "1300g",
+    "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c",
+    "categoryId": 2
   },
   {
-    "name": "Pepperoni",
-    "description": "Pepperoni, mozzarella, rajčatová omáčka",
-    "price": 259,
-    "weight": "550g",
-    "image": "https://images.unsplash.com/photo-1548365328-9f547fb0953b",
-    "categoryId": 4
+    "name": "Party Set",
+    "description": "50 ks sushi pro oslavy",
+    "price": 1699,
+    "weight": "2200g",
+    "image": "https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56",
+    "categoryId": 2
   },
   {
-    "name": "Hawaii",
-    "description": "Šunka, ananas, mozzarella",
-    "price": 249,
-    "weight": "530g",
-    "image": "https://images.unsplash.com/photo-1594007654729-407eedc4be65",
-    "categoryId": 4
+    "name": "Love Set",
+    "description": "Speciální romantický sushi set",
+    "price": 799,
+    "weight": "950g",
+    "image": "https://images.unsplash.com/photo-1553621042-f6e147245754",
+    "categoryId": 2
   },
-  {
-    "name": "Coca Cola",
-    "description": "0.5l",
-    "price": 49,
-    "weight": "500ml",
-    "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97",
-    "categoryId": 5
-  },
-  {
-    "name": "Sprite",
-    "description": "0.5l",
-    "price": 49,
-    "weight": "500ml",
-    "image": "https://images.unsplash.com/photo-1624517452488-04869289c4ca",
-    "categoryId": 5
-  },
-  {
-    "name": "Fanta",
-    "description": "0.5l",
-    "price": 49,
-    "weight": "500ml",
-    "image": "https://images.unsplash.com/photo-1581636625402-29b2a704ef13",
-    "categoryId": 5
-  },
-  {
-    "name": "Cheesecake",
-    "description": "Domácí cheesecake s ovocem",
-    "price": 129,
-    "weight": "180g",
-    "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b",
-    "categoryId": 6
-  },
-  {
-    "name": "Čokoládový dort",
-    "description": "Čokoládový dort s krémem",
-    "price": 139,
-    "weight": "200g",
-    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
-    "categoryId": 6
-  },
-  {
-    "name": "Kuřecí Wok",
-    "description": "Kuřecí maso, nudle, zelenina, teriyaki",
-    "price": 299,
-    "weight": "450g",
-    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
-    "categoryId": 7
-  }
+{
+  "name": "Margherita",
+  "description": "Rajčata, mozzarella, bazalka",
+  "price": 229,
+  "weight": "500g",
+  "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591",
+  "categoryId": 4
+},
+{
+  "name": "Pepperoni",
+  "description": "Pepperoni, mozzarella, rajčatová omáčka",
+  "price": 259,
+  "weight": "550g",
+  "image": "https://images.unsplash.com/photo-1548365328-9f547fb0953b",
+  "categoryId": 4
+},
+{
+  "name": "Hawaii",
+  "description": "Šunka, ananas, mozzarella",
+  "price": 249,
+  "weight": "530g",
+  "image": "https://images.unsplash.com/photo-1594007654729-407eedc4be65",
+  "categoryId": 4
+},
+{
+  "name": "BBQ Chicken Pizza",
+  "description": "Kuřecí maso, BBQ omáčka, mozzarella",
+  "price": 289,
+  "weight": "580g",
+  "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591",
+  "categoryId": 4
+},
+{
+  "name": "Quattro Formaggi",
+  "description": "4 druhy sýra, smetana",
+  "price": 279,
+  "weight": "540g",
+  "image": "https://images.unsplash.com/photo-1548365328-9f547fb0953b",
+  "categoryId": 4
+},
+{
+  "name": "Mexicana",
+  "description": "Pikantní salám, jalapeños, kukuřice",
+  "price": 299,
+  "weight": "560g",
+  "image": "https://images.unsplash.com/photo-1594007654729-407eedc4be65",
+  "categoryId": 4
+},
+{
+  "name": "Coca Cola",
+  "description": "0.5l",
+  "price": 49,
+  "weight": "500ml",
+  "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97",
+  "categoryId": 5
+},
+{
+  "name": "Sprite",
+  "description": "0.5l",
+  "price": 49,
+  "weight": "500ml",
+  "image": "https://images.unsplash.com/photo-1624517452488-04869289c4ca",
+  "categoryId": 5
+},
+{
+  "name": "Fanta",
+  "description": "0.5l",
+  "price": 49,
+  "weight": "500ml",
+  "image": "https://images.unsplash.com/photo-1581636625402-29b2a704ef13",
+  "categoryId": 5
+},
+{
+  "name": "Ice Tea Peach",
+  "description": "Ledový čaj broskev 0.5l",
+  "price": 55,
+  "weight": "500ml",
+  "image": "https://images.unsplash.com/photo-1499638673689-79a0b5115d87",
+  "categoryId": 5
+},
+{
+  "name": "Red Bull",
+  "description": "Energetický nápoj 0.25l",
+  "price": 69,
+  "weight": "250ml",
+  "image": "https://images.unsplash.com/photo-1629203851122-3726ecdf080e",
+  "categoryId": 5
+},
+{
+  "name": "Minerální voda",
+  "description": "Neperlivá voda 0.5l",
+  "price": 39,
+  "weight": "500ml",
+  "image": "https://images.unsplash.com/photo-1561047029-3000c68339ca",
+  "categoryId": 5
+},
+{
+  "name": "Cheesecake",
+  "description": "Domácí cheesecake s ovocem",
+  "price": 129,
+  "weight": "180g",
+  "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b",
+  "categoryId": 6
+},
+{
+  "name": "Čokoládový dort",
+  "description": "Čokoládový dort s krémem",
+  "price": 139,
+  "weight": "200g",
+  "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
+  "categoryId": 6
+},
+{
+  "name": "Tiramisu",
+  "description": "Italský dezert s mascarpone",
+  "price": 149,
+  "weight": "190g",
+  "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9",
+  "categoryId": 6
+},
+{
+  "name": "Makronky",
+  "description": "Francouzské mandlové makronky",
+  "price": 119,
+  "weight": "120g",
+  "image": "https://images.unsplash.com/photo-1569864358642-9d1684040f43",
+  "categoryId": 6
+},
+{
+  "name": "Jahodový dort",
+  "description": "Lehký dort s jahodami",
+  "price": 139,
+  "weight": "210g",
+  "image": "https://images.unsplash.com/photo-1464306076886-da185f6a9d05",
+  "categoryId": 6
+},
+{
+  "name": "Kuřecí Wok",
+  "description": "Kuřecí maso, nudle, zelenina, teriyaki",
+  "price": 299,
+  "weight": "450g",
+  "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+  "categoryId": 7
+},
+{
+  "name": "Hovězí Wok",
+  "description": "Hovězí maso, nudle, zelenina",
+  "price": 329,
+  "weight": "470g",
+  "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+  "categoryId": 7
+},
+{
+  "name": "Krevetový Wok",
+  "description": "Krevety, rýžové nudle, teriyaki",
+  "price": 349,
+  "weight": "450g",
+  "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e",
+  "categoryId": 7
+},
+{
+  "name": "Vegetariánský Wok",
+  "description": "Tofu, zelenina, sójová omáčka",
+  "price": 279,
+  "weight": "430g",
+  "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
+  "categoryId": 7
+},
+{
+  "name": "Teriyaki Wok",
+  "description": "Kuřecí maso, teriyaki omáčka, nudle",
+  "price": 319,
+  "weight": "460g",
+  "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+  "categoryId": 7
+},
+{
+  "name": "Pad Thai",
+  "description": "Thajské nudle s krevetami",
+  "price": 339,
+  "weight": "480g",
+  "image": "https://images.unsplash.com/photo-1559847844-5315695dadae",
+  "categoryId": 7
+},
+{
+  "name": "Spicy Chicken Wok",
+  "description": "Pikantní kuřecí maso, zelenina, chilli",
+  "price": 309,
+  "weight": "450g",
+  "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
+  "categoryId": 7
+},
+{
+  "name": "Orange Juice",
+  "description": "Pomerančový džus 0.3l",
+  "price": 59,
+  "weight": "300ml",
+  "image": "https://images.unsplash.com/photo-1600271886742-f049cd5bba3f",
+  "categoryId": 5
+},
+{
+  "name": "Mango Smoothie",
+  "description": "Mangové smoothie",
+  "price": 89,
+  "weight": "400ml",
+  "image": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4",
+  "categoryId": 5
+},
+{
+  "name": "Vanilkový cupcake",
+  "description": "Cupcake s vanilkovým krémem",
+  "price": 99,
+  "weight": "120g",
+  "image": "https://images.unsplash.com/photo-1486427944299-d1955d23e34d",
+  "categoryId": 6
+},
+{
+  "name": "Brownie",
+  "description": "Čokoládové brownie",
+  "price": 109,
+  "weight": "150g",
+  "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c",
+  "categoryId": 6
+}
 ]
+
+
