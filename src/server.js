@@ -36,7 +36,7 @@ app.use('/api/categories', categoriesRouter);
 app.use('/api/menu', menuRouter);
 app.use('/api/cart', cartRouter);
 app.use('/api/auth', authRouter);
-app.use('/orders', ordersRouter);
+app.use('/api/orders', ordersRouter);
 
 app.use(errors());
 
