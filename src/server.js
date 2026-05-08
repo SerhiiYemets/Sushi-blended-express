@@ -25,24 +25,45 @@ app.set('trust proxy', 1);
 
 const allowedOrigins = [
   'http://localhost:3000',
-  'http://127.0.0.1:3000',
   process.env.FRONTEND_DOMAIN,
 ];
 
-app.use(
-  cors({
-    origin(origin, callback) {
-      console.log('CORS ORIGIN:', origin);
+app.use(logger);
 
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error(`CORS blocked: ${origin}`));
-      }
-    },
-    credentials: true,
+app.use(
+  helmet({
+    crossOriginResourcePolicy: { policy: 'cross-origin' },
   }),
 );
+
+const normalizedAllowedOrigins = allowedOrigins
+  .filter(Boolean)
+  .map((o) => o.replace(/\/$/, ''));
+
+const vercelPreviewRegex = /^https:\/\/sushi-blended-express-frontend.*\.vercel\.app$/;
+
+const corsOptions = {
+  origin(origin, callback) {
+    if (!origin) return callback(null, true);
+
+    const normalized = origin.replace(/\/$/, '');
+
+    if (normalizedAllowedOrigins.includes(normalized)) {
+      return callback(null, true);
+    }
+
+    if (vercelPreviewRegex.test(normalized)) {
+      return callback(null, true);
+    }
+
+    return callback(null, false);
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+};
+
+app.use(cors(corsOptions));
 
 app.use(express.json());
 
