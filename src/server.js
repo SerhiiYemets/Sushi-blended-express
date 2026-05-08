@@ -25,20 +25,19 @@ app.set('trust proxy', 1);
 
 const allowedOrigins = [
   'http://localhost:3000',
+  'http://127.0.0.1:3000',
   process.env.FRONTEND_DOMAIN,
 ];
-
-app.use(logger);
-
-app.use(helmet());
 
 app.use(
   cors({
     origin(origin, callback) {
+      console.log('CORS ORIGIN:', origin);
+
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
-        callback(new Error('Not allowed by CORS'));
+        callback(new Error(`CORS blocked: ${origin}`));
       }
     },
     credentials: true,
