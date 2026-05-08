@@ -14,6 +14,7 @@ import categoriesRouter from './routes/categories.js';
 import menuRouter from './routes/menu.js';
 import cartRouter from './routes/cart.js';
 import authRouter from './routes/auth.js';
+import ordersRouter from './routes/orders.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -22,7 +23,7 @@ app.use(logger);
 
 app.use(
   cors({
-    origin: true,
+    origin: process.env.FRONTEND_DOMAIN,
     credentials: true,
   }),
 );
@@ -35,6 +36,7 @@ app.use('/api/categories', categoriesRouter);
 app.use('/api/menu', menuRouter);
 app.use('/api/cart', cartRouter);
 app.use('/api/auth', authRouter);
+app.use('/orders', ordersRouter);
 
 app.use(errors());
 
